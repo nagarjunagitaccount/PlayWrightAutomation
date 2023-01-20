@@ -26,9 +26,7 @@ reporter:'html',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'retain-on-failure',
     Viewport:{
-      width:1536,
-      height:746
-    }
+      width:1920,height:1080}
   }
 
 };
