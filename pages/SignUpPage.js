@@ -17,16 +17,23 @@ class SignUpPage{
     }
     async enternameandcontinue(name,index)
     {
+       
          await this.nameinputtextbox.type(name);
-         await this.continueBtnName.nth(index).click();
+       
+        await this.clickcontinue(index);
 
 
     }
+    async clickcontinue(index){
+
+        await this.continueBtnName.nth(index).click();
+    }
     async enterpasswordandcontinue(password,index)
     {
+        
         await this.passwordinput.type(password);
         await this.signuptermsandcondition.click();
-        await this.continueBtnName.nth(index).click();
+        await this.clickcontinue(index);
 
     }
     async validateheadertitle(){
